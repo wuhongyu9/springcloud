@@ -1,0 +1,33 @@
+server:
+  port:
+    8803
+spring:
+  application:
+    name:
+      cloud-stream-consumer
+  cloud:
+    stream:
+      binders:
+        defaultRabbit:
+          #使用rabbitmq
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: localhost
+                port: 5672
+                username: guest
+                password: guest
+      bindings:
+        input:
+          destination: studyExchange
+          content-type: application/json
+          binder: defaultRabbit
+          group: AtGuiGuB
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id: streamconsumer
+    prefer-ip-address: true

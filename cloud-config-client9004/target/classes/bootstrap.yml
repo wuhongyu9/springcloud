@@ -1,0 +1,34 @@
+server:
+  port:
+    9004
+spring:
+  application:
+    name:
+      config-client9004
+  cloud:
+    config:
+      #分支
+      label: master
+      #前缀-后缀
+      name: application
+      profile: test
+      #服务器地址
+      uri:  http://localhost:9002
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://localhost:7001/eureka
+
+#暴露监控端点
+#curl -X POST "http://localhost:9004/actuator/refresh"
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+

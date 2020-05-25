@@ -1,0 +1,19 @@
+[
+    {
+        "resource":"/testA",
+        "limitApp":"default",
+        "grade":1,
+        "count":1,
+        "strategy":0,
+        "controlerBehavior":0,
+        "clusterMode":false
+    }
+]
+
+resource : 资源名称
+limitApp : 'default'
+grade : 0代表线程数，1代表qps
+count : 代表数目
+strategy : 0直接 1关联 2链路
+controlBehavior: 0快速失败，1 warmup, 2 排队等待
+clusterMode : 是否集群

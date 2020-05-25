@@ -1,0 +1,45 @@
+server:
+  port:
+    9002
+spring:
+  application:
+    name:
+      cloud-config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/why8023wmy/springcloudConfig
+          search-path:
+            - springcloudConfig
+      label: master
+
+  #配置pabbit
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka
+    instance:
+        instance-id: config-center9002
+        prefer-ip-address: true
+
+#定点通知
+#curl -X POST "http://localhost:9002/actuator/bus-refresh/config-client:9003,9004"
+
+#全局广播
+#curl -X POST "http://localhost:9002/actuator/bus-refresh"
+
+#暴露bus刷新配置的端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'bus-refresh'

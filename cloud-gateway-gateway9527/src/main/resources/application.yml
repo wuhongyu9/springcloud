@@ -1,0 +1,46 @@
+server:
+  port:
+    9527
+
+spring:
+  application:
+    name:
+      cloud-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled:
+            true
+      routes:
+        - id: payment_routh1
+          uri:  lb://cloud-payment-service
+          predicates:
+            - Path=/payment/get/**
+#            - After=2020-05-29T17:48:37.815+08:00[Asia/Shanghai]
+#            - Before=2020-05-13T17:48:37.815+08:00[Asia/Shanghai]
+#            - Between=2020-05-13T17:48:37.815+08:00[Asia/Shanghai],2020-05-29T17:48:37.815+08:00[Asia/Shanghai]
+            #curl http://localhost:9527/payment/get/10 --cookie "username=why"
+#            - Cookie=username,why
+            #curl http://localhost:9527/payment/get/10 -H "X-Request-Id:100"
+#            - Header=X-Request-Id,\d+
+            #curl http://localhost:9527/payment/get/10 -H "Host:www.guigu.com"
+#            - Host=*.guigu.com
+#            - Method=GET
+            #curl http://localhost:9527/payment/get/10?username=31 -H "Host:www.guigu.com"
+#            - Query=username,\d+
+        - id: payment_routh2
+          uri:  lb://cloud-payment-service
+          predicates:
+            - Path=/payment/lb/**
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka
+  instance:
+    instance-id: gateway9527
+    prefer-ip-address: true

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud-alibaba-nacos-config9003" />
+        <module name="cloud-alibaba-nacos-consumer-order80" />
+        <module name="cloud-alibaba-nacos-provider-payment9001" />
+        <module name="cloud-alibaba-nacos-provider-payment9002" />
+        <module name="cloud-alibaba-nacos-sentinel-feign-consumer84" />
+        <module name="cloud-alibaba-nacos-sentinel-feign-payment9004" />
+        <module name="cloud-api-commons" />
+        <module name="cloud-config-center9002" />
+        <module name="cloud-config-client9003" />
+        <module name="cloud-config-client9004" />
+        <module name="cloud-consumer-feign-hystrix-order80" />
+        <module name="cloud-consumer-feign-order80" />
+        <module name="cloud-consumer-order80" />
+        <module name="cloud-consumerconsul-order80" />
+        <module name="cloud-consumerzk-order80" />
+        <module name="cloud-eureka-server-7001" />
+        <module name="cloud-eureka-server7001" />
+        <module name="cloud-eureka-server7002" />
+        <module name="cloud-eureka-server7003" />
+        <module name="cloud-gateway-gateway9527" />
+        <module name="cloud-gateway-getway9527" />
+        <module name="cloud-hystrix-dashboard9001" />
+        <module name="cloud-provider-hystrix-payment8005" />
+        <module name="cloud-provider-payment8001" />
+        <module name="cloud-provider-payment8002" />
+        <module name="cloud-provider-payment8003" />
+        <module name="cloud-provider-payment8004" />
+        <module name="cloud-provider-server8004" />
+        <module name="cloud-stream-rabbitmq-consumer8802" />
+        <module name="cloud-stream-rabbitmq-consumer8803" />
+        <module name="cloud-stream-rabbitmq-provider8801" />
+        <module name="seata-nacos-feign-account9003" />
+        <module name="seata-nacos-feign-order9001" />
+        <module name="seata-nacos-feign-product9002" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-alibaba-nacos-config9003" target="1.8" />
+      <module name="cloud-alibaba-nacos-consumer-order80" target="1.8" />
+      <module name="cloud-alibaba-nacos-provider-payment9001" target="1.8" />
+      <module name="cloud-alibaba-nacos-provider-payment9002" target="1.8" />
+      <module name="cloud-alibaba-nacos-sentinel-feign-consumer84" target="1.8" />
+      <module name="cloud-alibaba-nacos-sentinel-feign-payment9004" target="1.8" />
+      <module name="cloud-api-commons" target="1.8" />
+      <module name="cloud-config-center9002" target="1.8" />
+      <module name="cloud-config-client9003" target="1.8" />
+      <module name="cloud-config-client9004" target="1.8" />
+      <module name="cloud-consumer-feign-hystrix-order80" target="1.8" />
+      <module name="cloud-consumer-feign-order80" target="1.8" />
+      <module name="cloud-consumer-order80" target="1.8" />
+      <module name="cloud-consumerconsul-order80" target="1.8" />
+      <module name="cloud-consumerzk-order80" target="1.8" />
+      <module name="cloud-eureka-server-7001" target="1.8" />
+      <module name="cloud-eureka-server7001" target="1.8" />
+      <module name="cloud-eureka-server7002" target="1.8" />
+      <module name="cloud-eureka-server7003" target="1.8" />
+      <module name="cloud-gateway-gateway9527" target="1.8" />
+      <module name="cloud-gateway-getway9527" target="1.8" />
+      <module name="cloud-hystrix-dashboard9001" target="1.8" />
+      <module name="cloud-provider-hystrix-payment8005" target="1.8" />
+      <module name="cloud-provider-payment8001" target="1.8" />
+      <module name="cloud-provider-payment8002" target="1.8" />
+      <module name="cloud-provider-payment8003" target="1.8" />
+      <module name="cloud-provider-payment8004" target="1.8" />
+      <module name="cloud-provider-server8004" target="1.8" />
+      <module name="cloud-seata-service-order9001" target="1.8" />
+      <module name="cloud-stream-rabbitmq-consumer8802" target="1.8" />
+      <module name="cloud-stream-rabbitmq-consumer8803" target="1.8" />
+      <module name="cloud-stream-rabbitmq-provider8801" target="1.8" />
+      <module name="cloud2020" target="1.8" />
+      <module name="seata-nacos-feign-account9003" target="1.8" />
+      <module name="seata-nacos-feign-order9001" target="1.8" />
+      <module name="seata-nacos-feign-product9002" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

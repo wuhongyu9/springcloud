@@ -1,0 +1,22 @@
+server:
+  port:
+    9003
+
+spring:
+  application:
+    name:
+      nacos-config-client
+  cloud:
+    nacos:
+      discovery:
+        server-addr:
+          localhost:8848
+      config:
+        server-addr:
+          localhost:8848
+        file-extension: yml
+        namespace: e08628d0-4408-4a7f-b8d9-0ce620540a62
+        group: TEST_GROUP
+
+
+#{spring.application.name}-{spring.profiles.active}.{spring.cloud.nacos.config.file-extension}
